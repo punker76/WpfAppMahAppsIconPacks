@@ -1,6 +1,7 @@
 ﻿<mah:MetroWindow x:Class="WpfAppMahAppsIconPacks.MainWindow"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:customIcons="clr-namespace:WpfAppMahAppsIconPacks.CustomIcons"
                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                  xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
                  xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
@@ -11,15 +12,31 @@
                  mc:Ignorable="d">
   <Grid>
 
-    <mah:Tile Title="Open Project"
-              Margin="3"
-              mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
-              Background="OrangeRed"
-              HorizontalTitleAlignment="Right">
-      <iconPacks:PackIconMaterial Width="40"
-                                  Height="40"
-                                  Kind="EmailOpen" />
-    </mah:Tile>
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+
+      <mah:Tile Title="Open Project"
+                Margin="3"
+                mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
+                Background="OrangeRed"
+                HorizontalTitleAlignment="Right">
+        <iconPacks:PackIconMaterial Width="40"
+                                    Height="40"
+                                    Kind="EmailOpen" />
+      </mah:Tile>
+
+      <mah:Tile Title="Custom Icon"
+                Margin="3"
+                mah:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
+                Background="DarkOrange"
+                HorizontalTitleAlignment="Right">
+        <customIcons:PackIconCustomIcons Width="40"
+                                         Height="40"
+                                         Kind="AwesomeIcon" />
+      </mah:Tile>
+
+    </StackPanel>
 
   </Grid>
 </mah:MetroWindow>

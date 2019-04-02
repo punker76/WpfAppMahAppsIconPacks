@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WpfAppMahAppsIconPacks.Themes"
+                    xmlns:customIcons="clr-namespace:WpfAppMahAppsIconPacks.CustomIcons">
+
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="pack://application:,,,/WpfAppMahAppsIconPacks;component/Customicons/PackIconCustomIcons.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+
+  <Style TargetType="{x:Type customIcons:PackIconCustomIcons}" BasedOn="{StaticResource MahApps.Metro.Styles.PackIconCustomIcons}" />
+
+</ResourceDictionary>
