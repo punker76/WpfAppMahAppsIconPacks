@@ -1,6 +1,6 @@
 # WpfAppMahAppsIconPacks
 
-WPF sample with [MahApps.Metro](https://github.com/MahApps/MahApps.Metro) v1.6.5 and [IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) v2.3.0.
+WPF sample with [MahApps.Metro](https://github.com/MahApps/MahApps.Metro) v2.0.0 pre-release and [IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) v3.0.0 pre-release.
 
 This sample needs at least VS 2015 Community Edition.
 
